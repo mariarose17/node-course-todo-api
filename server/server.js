@@ -9,6 +9,12 @@ var { User } = require('./models/user');
 var app = express();
 app.use(bodyParser.json());
 
+
+// var user = new User({ email: 'maria@gmail.com' });
+// user.save().then((doc) => {
+//     console.log(doc);
+// }, (e) => console.log(e));
+
 app.post('/todos', (req, res) => {
     // console.log(req.body);
     var todo = new Todo({
